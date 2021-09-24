@@ -1,0 +1,113 @@
+// Place all the styles related to the Books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+$lfs-blue: #006ac6;
+$lfs-yellow: #fab700;
+$lfs-grey: #75787b;
+$lfs-light-blue: #559cdb;
+
+$btn-border-radius: 6px;
+$btn-padding: 5px;
+
+.caption {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $lfs-yellow;
+    text-align: center;
+}
+
+.books-table {
+    // width: 100%;
+    thead {
+        border-top: 2px solid $lfs-yellow;
+        border-bottom: 2px solid $lfs-yellow;
+        th {
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px;
+            color: $lfs-blue;
+            border: 1px solid #F1F1F1;
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid #F1F1F1;
+            color: $lfs-grey;
+            td {
+                padding: 10px;
+                border: 1px solid #F1F1F1;
+            }
+            th {
+                padding-left: 10px;
+                border: 1px solid #F1F1F1;
+            }
+        }
+    }
+}
+
+.btn {
+    text-decoration: none;
+    border-radius: $btn-border-radius;
+    padding: $btn-padding;
+}
+
+.show-btn {
+    color: white;
+    background-color: $lfs-yellow;
+    &:hover {
+        color: rgb(82, 82, 82);
+        background-color: white;
+        border:1px solid $lfs-yellow;
+    }
+}
+
+.edit-btn {
+    color: white;
+    background-color: $lfs-blue;
+    &:hover {
+        color: rgb(82, 82, 82);
+        background-color: white;
+        border:1px solid $lfs-blue;
+    }
+}
+
+.destroy-btn {
+    color: white;
+    background-color: $lfs-grey;
+    &:hover {
+        color: rgb(82, 82, 82);
+        background-color: white;
+        border:1px solid $lfs-grey;
+    }
+}
+
+.new-btn {
+    color: black;
+    border:1px solid $lfs-grey;
+    &:hover {
+        color: white;
+        background-color: $lfs-grey;
+        border:1px solid $lfs-yellow;
+    }
+}
+
+.back-btn {
+    color: white;
+    background-color: $lfs-light-blue;
+    &:hover {
+        color: rgb(82, 82, 82);
+        background-color: white;
+        border:1px solid $lfs-light-blue;
+    }
+}
+
+.submit-btn {
+    color: white;
+    background-color: $lfs-blue;
+    &:hover {
+        color: rgb(82, 82, 82);
+        background-color: white;
+        border:1px solid $lfs-blue;
+    }
+}
