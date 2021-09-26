@@ -1,5 +1,6 @@
 class BooksController < ApplicationController
   before_action :set_book, only: %i[ show edit update destroy ]
+  add_flash_types :info, :warning
 
   # GET /books or /books.json
   def index
